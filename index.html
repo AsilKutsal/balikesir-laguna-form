@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balıkesir Laguna Termal Resort & Spa - Tatil Katılım Formu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-wrapper">
+            <div class="header">
+                <h1>🏨 Balıkesir Laguna Termal Resort & Spa</h1>
+                <p class="subtitle">3 Gece 4 Gün Ücretsiz Tatil Hediyesi Kazanma Fırsatı</p>
+            </div>
+
+            <div class="offer-info">
+                <div class="offer-card">
+                    <h3>🌊 Tatil Paketi</h3>
+                    <p><strong>3 Gece 4 Gün</strong> - Tüm İçimli</p>
+                </div>
+            </div>
+
+            <form id="participationForm" class="form">
+                <div class="form-group">
+                    <label for="fullname">Ad Soyadı *</label>
+                    <input 
+                        type="text" 
+                        id="fullname" 
+                        name="fullname" 
+                        placeholder="Adınız ve Soyadınız" 
+                        required
+                    >
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="age">Yaş *</label>
+                        <input 
+                            type="number" 
+                            id="age" 
+                            name="age" 
+                            placeholder="Yaşınız" 
+                            min="18" 
+                            max="120" 
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="profession">Meslek *</label>
+                        <input 
+                            type="text" 
+                            id="profession" 
+                            name="profession" 
+                            placeholder="Mesleğiniz" 
+                            required
+                        >
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Telefon *</label>
+                    <input 
+                        type="tel" 
+                        id="phone" 
+                        name="phone" 
+                        placeholder="05XX XXX XX XX" 
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="maritalStatus">Medeni Durum *</label>
+                    <select id="maritalStatus" name="maritalStatus" required>
+                        <option value="">Seçiniz...</option>
+                        <option value="bekar">Bekar</option>
+                        <option value="evli">Evli</option>
+                    </select>
+                </div>
+
+                <div class="form-group checkbox">
+                    <input 
+                        type="checkbox" 
+                        id="terms" 
+                        name="terms" 
+                        required
+                    >
+                    <label for="terms">Kişisel verilerimin işlenmesine izin veriyorum *</label>
+                </div>
+
+                <button type="submit" class="submit-btn">Katılımı Tamamla</button>
+            </form>
+
+            <div id="successMessage" class="success-message hidden">
+                <h2>✅ Başarıyla Katıldınız!</h2>
+                <p>Katılımınız başarıyla kaydedilmiştir.</p>
+                <button onclick="location.reload()" class="reset-btn">Yeni Katılım</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
